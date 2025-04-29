@@ -3,9 +3,13 @@
 :root {
   /* Fonts */
   --font-tittle: "Metal Mania", system-ui;
-  --font-paragraph: "Rokkitt", serif;
+  --font-paragraph: "Karla", sans-serif;
+  --font-subtittle: "Oswald", sans-serif;
 
   /* Colors */
+  --grey: #d1d1d1;
+  --fire: #ff4500;
+  --darkblue: #0d1b2a;
 }
 
 * {
@@ -16,17 +20,46 @@
 
 .tittle {
   font-family: var(--font-tittle);
+  font-size: 40px;
+}
+
+.subtittle {
+  font-family: var(--font-subtittle);
 }
 
 .paragraph {
   font-family: var(--font-paragraph);
-  font-size: 12px;
 }
 
 /* --- NavBar --- */
 
-.navbar-brand {
+.navbar .navbar-brand {
   font-family: var(--font-tittle);
+  color: var(--grey);
+}
+
+.navbar .navbar-brand:hover {
+  color: var(--fire);
+  transition: 0.8s;
+}
+
+.navbar {
+  background-color: var(--darkblue);
+}
+
+.navbar .nav-link {
+  font-family: var(--font-paragraph);
+  color: var(--grey);
+}
+
+.navbar .nav-link:hover {
+  color: var(--fire);
+  transition: 0.8s;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 24px;
 }
 
 /* --- About Us --- */
@@ -72,7 +105,13 @@
   color: aliceblue;
 }
 
+#about_us .subtittle {
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
 #about_us .paragraph {
   width: 80%;
-  font-size: 16px;
+  font-size: 14px;
 }
