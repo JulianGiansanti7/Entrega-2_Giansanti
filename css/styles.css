@@ -1,8 +1,11 @@
 /* Entrega numero 2 - Julian Giansanti */
 
 :root {
-  --font-tittle: "Orbitron", sans-serif;
-  --font-paragraph: "Roboto", sans-serif;
+  /* Fonts */
+  --font-tittle: "Metal Mania", system-ui;
+  --font-paragraph: "Rokkitt", serif;
+
+  /* Colors */
 }
 
 * {
@@ -38,7 +41,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 70%;
+  height: 80%;
   width: 100%;
   z-index: -1;
 }
@@ -55,7 +58,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(40, 0, 55, 0.8);
 }
 
 #about_us {
@@ -70,5 +73,6 @@
 }
 
 #about_us .paragraph {
-  width: 70%;
+  width: 80%;
+  font-size: 16px;
 }
