@@ -20,14 +20,17 @@
 
 .tittle {
   font-family: var(--font-tittle);
+  color: var(--grey);
 }
 
 .subtittle {
   font-family: var(--font-subtittle);
+  color: var(--grey);
 }
 
 .paragraph {
   font-family: var(--font-paragraph);
+  color: var(--grey);
 }
 
 .link {
@@ -111,7 +114,6 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  color: aliceblue;
 }
 
 #info .tittle {
@@ -130,8 +132,21 @@
 }
 
 #about_us {
-  overflow: hidden;
   background-color: #0d1b2a;
-  height: calc(100vh - 56px);
-  width: 100vw;
+  min-height: calc(100vh - 56px);
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+
+.about_us-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.carousel-item {
+  height: 175px;
 }
