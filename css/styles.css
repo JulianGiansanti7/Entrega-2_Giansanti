@@ -20,7 +20,6 @@
 
 .tittle {
   font-family: var(--font-tittle);
-  font-size: 40px;
 }
 
 .subtittle {
@@ -29,6 +28,16 @@
 
 .paragraph {
   font-family: var(--font-paragraph);
+}
+
+.link {
+  font-family: var(--font-paragraph);
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 /* --- NavBar --- */
@@ -74,7 +83,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 80%;
+  height: 100%;
   width: 100%;
   z-index: -1;
 }
@@ -94,24 +103,35 @@
   background-color: rgba(40, 0, 55, 0.8);
 }
 
-#about_us {
-  height: 70vh;
+#info {
+  height: 90vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   color: aliceblue;
 }
 
-#about_us .subtittle {
+#info .tittle {
+  font-size: 36px;
+}
+
+#info .subtittle {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 4px;
 }
 
-#about_us .paragraph {
+#info .paragraph {
   width: 80%;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+#about_us {
+  overflow: hidden;
+  background-color: #0d1b2a;
+  height: calc(100vh - 56px);
+  width: 100vw;
 }
