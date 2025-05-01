@@ -118,18 +118,17 @@
 }
 
 #info .title {
-  font-size: 36px;
+  font-size: 2.5em;
 }
 
 #info .subtitle {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.3em;
   letter-spacing: 4px;
 }
 
 #info .paragraph {
   width: 80%;
-  font-size: 16px;
 }
 
 /* --- Our Festival --- */
@@ -210,7 +209,7 @@
 
 #lineup .title {
   margin-top: 20px;
-  font-size: 32px;
+  font-size: 2em;
   padding: 20px;
 }
 
@@ -229,7 +228,7 @@
 }
 
 .band-logo img {
-  max-width: 250px;
+  max-width: 200px;
   filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.4));
   transition: transform 0.3s ease;
   width: 100%;
@@ -248,7 +247,7 @@
 }
 
 #lineup .subtitle {
-  font-size: 1.5em;
+  font-size: 1.3em;
   width: 50%;
   text-align: center;
 }
@@ -266,7 +265,7 @@
 }
 
 #tickets .title {
-  font-size: 32px;
+  font-size: 2.5em;
   text-align: center;
 }
 
@@ -301,63 +300,45 @@
 #footer {
   background-color: var(--purple);
   width: 100%;
-  height: 60px;
-  padding: 20px;
+  height: 80px;
+  padding: 30px;
   text-align: center;
 }
 
 /* --- Responsive Web Design 576px --- */
 
 @media (min-width: 576px) {
-  /* --- NavBar --- */
-  .navbar .navbar-brand {
-    font-size: 2.5em;
-  }
-
-  .navbar .nav-link {
-    font-size: 1.5em;
-  }
-
-  .navbar .navbar-toggler-icon {
-    transform: scale(1.5);
-  }
-
   /* --- Info --- */
+
   #info {
-    gap: 4em;
+    gap: 2em;
   }
 
   /* --- Letters --- */
 
-  #info .title,
-  #our_festival .title,
-  #lineup .title,
-  #tickets .title {
-    font-size: 3em;
-  }
-
   #info .subtitle,
   #our_festival .subtitle,
   #tickets .subtitle {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   #info .paragraph,
   #our_festival .paragraph,
   #tickets .paragraph {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .link {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   /* --- Logos and buttons --- */
+
   .band-logo {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   .band-logo:hover {
-    transform: scale(1.6);
+    transform: scale(1.3);
   }
 
   .card-day button {
@@ -369,10 +350,6 @@
 
 @media (min-width: 768px) {
   /* --- Lineup --- */
-  #lineup {
-    height: 50vh;
-  }
-
   .band {
     flex-direction: row;
     justify-content: center;
@@ -386,6 +363,7 @@
   }
 
   /* --- Our Festival --- */
+
   .carousel-item {
     height: 400px;
   }
@@ -399,6 +377,7 @@
 
 @media (min-width: 992px) {
   /* --- Our Festival --- */
+
   .our_festival-container {
     flex-direction: row;
     justify-content: center;
@@ -418,9 +397,17 @@
   }
 
   /* --- Tickets --- */
+
   #tickets {
-    gap: 4em;
+    justify-content: space-around;
+    gap: 1em;
   }
+
+  #tickets .paragraph {
+    width: 40%;
+    text-align: center;
+  }
+
   .cards {
     display: flex;
     flex-direction: row;
@@ -440,11 +427,13 @@
 
 @media (min-width: 1200px) {
   /* --- Info --- */
+
   #info .paragraph {
     width: 40%;
   }
 
   /* --- Our Festival --- */
+
   .our_festival-container {
     align-items: center;
   }
