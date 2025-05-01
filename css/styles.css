@@ -36,7 +36,7 @@
 
 .link {
   font-family: var(--font-paragraph);
-  color: #d1d1d1;
+  color: var(--grey);
   text-decoration: none;
 }
 
