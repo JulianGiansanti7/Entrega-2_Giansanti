@@ -11,6 +11,7 @@
   --fire: #ff4500;
   --darkblue: #0d1b2a;
   --purple: #1c002f;
+  --lightpurple: #3a1554;
 }
 
 * {
@@ -295,6 +296,88 @@
   margin: 20px 0;
 }
 
+/* --- Contact --- */
+
+#contact {
+  background-color: var(--purple);
+  min-height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+#contact .title {
+  font-size: 2.5em;
+  width: 90%;
+  text-align: center;
+}
+
+#contact .paragraph {
+  width: 80%;
+  text-align: center;
+}
+
+#contact .subtitle {
+  font-size: 1.3em;
+  width: 90%;
+  text-align: center;
+}
+
+.contact_form {
+  background-color: var(--darkblue);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 20px 40px;
+  gap: 12px;
+}
+
+.contact_form label {
+  color: var(--grey);
+  font-family: var(--font-subtitle);
+}
+
+.contact_form input {
+  background-color: var(--grey);
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid var(--fire);
+}
+
+.contact_form input:focus {
+  outline: none;
+}
+
+.contact_form textarea {
+  background-color: var(--grey);
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid var(--fire);
+  resize: vertical;
+  min-height: 200px;
+  max-height: 600px;
+}
+
+.contact_form textarea:focus {
+  outline: none;
+}
+
+.contact_form .contact_form-button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: var(--purple);
+  border: none;
+  color: var(--grey);
+  font-family: var(--font-subtitle);
+}
+
+.contact_form .contact_form-button:hover {
+  background-color: var(--lightpurple);
+}
+
 /* --- Footer --- */
 
 #footer {
@@ -303,6 +386,10 @@
   height: 80px;
   padding: 30px;
   text-align: center;
+}
+
+#footer .paragraph {
+  font-size: 1.3em;
 }
 
 /* --- Responsive Web Design 576px --- */
@@ -318,13 +405,15 @@
 
   #info .subtitle,
   #our_festival .subtitle,
-  #tickets .subtitle {
+  #tickets .subtitle,
+  #contact .subtitle {
     font-size: 1.5em;
   }
 
   #info .paragraph,
   #our_festival .paragraph,
-  #tickets .paragraph {
+  #tickets .paragraph,
+  #contact .paragraph {
     font-size: 1.2em;
   }
 
@@ -385,13 +474,6 @@
     gap: 50px;
   }
 
-  .our_festival-carousel,
-  .our_festival-text,
-  .our_festival-image {
-    flex: 1 1 50%;
-    max-width: 50%;
-  }
-
   #our_festival .paragraph {
     width: 100%;
   }
@@ -421,6 +503,37 @@
   .card-day {
     width: 80%;
   }
+
+  /* --- Contact --- */
+
+  #contact .paragraph {
+    width: 50%;
+  }
+
+  #contact .subtitle {
+    width: 50%;
+  }
+
+  .contact_form {
+    width: 60%;
+  }
+
+  .contact_form label {
+    font-size: 1.5em;
+  }
+
+  .contact_form input {
+    font-size: 1.3em;
+  }
+
+  .contact_form textarea {
+    font-size: 1.3em;
+  }
+
+  .contact_form .contact_form-button {
+    margin: 20px auto;
+    width: 60%;
+  }
 }
 
 /* --- Responsive Web Design 1200px --- */
@@ -444,5 +557,18 @@
 
   .our_festival-image {
     height: 600px;
+  }
+
+  /* --- Contact --- */
+  #contact .paragraph {
+    width: 30%;
+  }
+
+  #contact .subtitle {
+    width: 50%;
+  }
+
+  .contact_form {
+    max-width: 700px;
   }
 }

@@ -84,8 +84,36 @@
     </nav>
 
     <!-- Contact -->
-    <!-- Agregar fondo, tiene que ser violeta para seguir con el pie de la pagina... -->
-    <section id="contact">hola</section>
+    <section id="contact">
+      <h2 class="title">Contact Born to Rock</h2>
+      <p class="paragraph">
+        Whether you're looking to book a show, start a project, or just share
+        the love for rock 'n' roll — this is the place. Drop a message and let's
+        make some noise together.
+      </p>
+      <!-- Form -->
+      <form action="#" class="contact_form" autocomplete="on">
+        <label for="name">Full name</label>
+        <input
+          type="text"
+          id="name"
+          minlength="6"
+          maxlength="40"
+          required
+          pattern="[A-Za-z\s]+"
+        />
+        <label for="email">Email</label>
+        <input type="email" id="email" required maxlength="40" />
+        <label for="subject" maxlength="80">Subject</label>
+        <input type="text" id="subject" required />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" required></textarea>
+        <input type="submit" class="contact_form-button" value="Let's Rock" />
+      </form>
+      <h2 class="subtitle">
+        Thanks for reaching out — we'll get back to you soon. Stay loud!
+      </h2>
+    </section>
 
     <!-- Footer -->
     <footer id="footer">
