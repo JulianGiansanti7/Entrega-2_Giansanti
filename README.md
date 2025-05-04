@@ -63,7 +63,7 @@ Todo el contenido es ficticio y fue creado con fines educativos.
 
 Los logos e imágenes de bandas se usan solo con fines ilustrativos.
 
-🌐 Deploy
+🌐 URL
 
 El sitio está publicado en GitHub Pages y puede ser visitado aquí:
 
