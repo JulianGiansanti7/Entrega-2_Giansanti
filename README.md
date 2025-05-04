@@ -2,7 +2,7 @@
 
 Sitio Web de Festival de Rock y Heavy Metal.
 
-Cree un sitio web con multiples paginas de un festival fictio, presenta secciones claves como un lineup, galeria de fotos, venta de tickets y un formulario de contacto.
+Cree un sitio web con multiples paginas de un festival ficticio, presenta secciones claves como un lineup, galeria de fotos, venta de tickets y un formulario de contacto.
 
 El diseño es responsive y fue desarrollado con HTML, CSS y Bootstrap, con animaciones simples usando AOS.
 
